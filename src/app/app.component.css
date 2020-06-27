@@ -1,0 +1,12 @@
+.a {
+  background-color: #e1e1e1;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  border-spacing: 50px;
+
+
+}

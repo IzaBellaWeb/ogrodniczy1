@@ -1,0 +1,13 @@
+.a
+{
+  display: flex;
+  justify-content: inline;
+   flex-basis: 20%;
+   background-color: red;
+}
+
+.b
+{
+    justify-content: space-between;
+    flex-basis: 50%;
+}

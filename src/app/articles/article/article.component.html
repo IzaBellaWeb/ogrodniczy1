@@ -1,0 +1,37 @@
+<p>article works!</p>
+<div class="tile">
+
+<div class="tile-header">artykuły</div>
+
+<table class="tile-description">
+<tbody>
+<tr *ngIf="name">
+ <td>Mazwa artykułu</td>
+ <td>{{name}}</td>
+</tr>
+<tr *ngIf="price">
+  <td>Cena za artykuł</td>
+  <td>{{price | currency:'PLN':'code'}}</td>
+ </tr>
+
+<tr *ngIf="amount">
+ <td>Ilość sztuk</td>
+ <td>{{amount}}</td>
+</tr>
+
+
+
+<li *ngFor = "let task of taskList">
+  {{task}}
+  <button (click)="remove(task)">Usuń</button>
+
+</li>
+
+<input [(ngModel)]="newTask">
+
+  <button (click)="add()">Dodaj</button>
+
+</tbody>
+</table>
+
+</div>
